@@ -3,6 +3,7 @@ obj-m := genl_ex.o
 nl_test-y = genl_ex.o
 
 THIS_DIR := $(shell pwd)
+KERNEL_DIR := /lib/modules/$(shell uname -r)/build
 
 .phony: all
 all: genl_ex.ko
